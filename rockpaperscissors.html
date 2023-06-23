@@ -10,6 +10,10 @@
                 let choices = ['Rock', 'Paper', 'Scissors'];
                 return choice = choices[Math.floor(Math.random() * choices.length)];
             }
+            function getPlayerSelection() {
+                let playerSelection = prompt('Rock, Paper or Scissors?');
+                return playerSelection[0].toUpperCase() + playerSelection.slice(1).toLowerCase(); 
+            }
         </script>
     </body>
 </html>
